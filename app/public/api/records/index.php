@@ -1,3 +1,4 @@
+
 <?php
 
 // Step 1: Get a datase connection from our help class
@@ -14,10 +15,6 @@ if (isset($_GET['guid'])) {
   $stmt = $db->prepare('SELECT * FROM Patient');
   $stmt->execute();
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/red-10-14
 $patients = $stmt->fetchAll();
 
 // Step 3: Convert to JSON
